@@ -17,7 +17,7 @@ Output:
 
 --------------------------------------------------------------------------
 
-public class Q1 {
+public class student {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
