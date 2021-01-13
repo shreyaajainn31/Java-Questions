@@ -1,3 +1,5 @@
+/* Finds an element using binary search in a sorted array, returns not found if the element isnt found.*/
+
 package arrays;
 
 import java.util.Scanner;
