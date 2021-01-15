@@ -1,0 +1,14 @@
+/*After creating linkedList*/
+
+ static void update(int data,int updateTo){
+
+        Node temp = head;
+        while(temp!=null){
+            if(temp.data == data){
+                temp.data = updateTo;
+            }
+            temp = temp.next;
+        }
+    }
+    
+    
