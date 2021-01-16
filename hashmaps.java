@@ -10,6 +10,7 @@ public class hashmaps {
         h.put("S","J");
         h.put("A","J");
 
+        h.put("B","D");
         System.out.println(h);
 
        // System.out.println(h.get("S"));
