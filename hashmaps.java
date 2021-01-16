@@ -7,12 +7,12 @@ public class hashmaps {
     public static void main(String[] args) {
         HashMap<String,String> h = new HashMap<String, String>();
 
-        h.put("Shreya","Jain");
-        h.put("Anku","Jain");
+        h.put("S","J");
+        h.put("A","J");
 
         System.out.println(h);
 
-       // System.out.println(h.get("Shreya"));
+       // System.out.println(h.get("S"));
 
         HashMap<String, Integer> rollNo = new HashMap<String, Integer>();
 
