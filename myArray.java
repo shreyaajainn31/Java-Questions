@@ -3,28 +3,37 @@ package arrays;
 import java.lang.*;
 public class myArray {
 
-    static int[]array = new int[100000];
+
+    private static int[]array;
+    static int length = 0;
+    public myArray(int length){
+        this.array = new int[length];
+        this.length = length;
+    }
     public static int arrayIndex = 0;
+
     public static void insert(int data){
 
         array[arrayIndex] = data;
         arrayIndex++;
-
-        if(arrayIndex > array.length){
-            System.out.println("Sorry no more space.");
+        if(arrayIndex == array.length){
+            System.out.println("Sorry no more space");
         }
     }
 
     public static void display(){
 
-        for(int i = 0; i<arrayIndex;i++){
+        for(int i = 0; i<arrayIndex; i++){
             System.out.print(array[i] + " ");
         }
+        System.out.println();
     }
 
     public static void removeAt(int pos){
-        int copy[] = new int[arrayIndex];
+
+        int copy[] = new int[array.length];
         int ci = 0;
+
         for(int i = 0; i<arrayIndex; i++){
             if(i != pos){
                 copy[ci] = array[i];
@@ -33,6 +42,7 @@ public class myArray {
         }
 
         arrayIndex = 0;
+
         for(int i = 0; i<copy.length - 1; i++){
 
             array[arrayIndex] = copy[i];
@@ -43,6 +53,7 @@ public class myArray {
     public static int indexOf(int num){
 
         for(int index = 0; index<arrayIndex; index++){
+
             if(array[index] == num){
                 return index;
             }
@@ -52,7 +63,10 @@ public class myArray {
 
     public static void main(String[] args) {
 
-        myArray arrays = new myArray();
+        myArray arrays = new myArray(3);
+
+        display();
+
 
         arrays.insert(1);
         arrays.insert(2);
@@ -65,6 +79,7 @@ public class myArray {
         removeAt(1);
         display();
 
+        arrays.insert(5);
 
     }
 }
