@@ -18,7 +18,7 @@ public class stackUsingArray<i> {
     }
 
     int currCount = 0;
-    public void insert(int data){
+    public void push(int data){
 
         array[currCount] = data;
         currCount++;
@@ -93,15 +93,15 @@ public class stackUsingArray<i> {
 
         stackUsingArray stack = new stackUsingArray(5);
 
-        stack.insert(10);
-        stack.insert(20);
-        stack.insert(30);
-        stack.insert(40);
-        stack.insert(50);
-        stack.insert(60);
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+        stack.push(60);
 
         stack.pop();
-        stack.insert(30);
+        stack.push(30);
         stack.displayStack();
         stack.pop();
         stack.displayStack();
